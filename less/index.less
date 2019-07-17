@@ -71,6 +71,13 @@ html, body {
 	align-content: flex-start;
 }
 
+.work-container(){
+	.display();
+	border-top: 1px solid @sub-color;
+	padding: 2% 1%;
+	// padding-right: 10%;
+}
+
 // variables
 
 @global-font:'Poppins', sans-serif;
@@ -92,7 +99,7 @@ h3{
 }
 
 h4{
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 // nav styles
@@ -171,6 +178,7 @@ header {
 // about styles
 .about{
 	.display();
+	margin: 4% 0%;
 
 	div{
 		.display();
@@ -203,19 +211,31 @@ header {
 		font-family: @global-font;
 		margin: 2% 0%;
 	}
+	.work-main {
+		.work-container();
+		// font-weight: 600;
+
+		h4{
+			
+		}
+	}
+
 	.work1{
-		.display();
-		border-top: 1px solid @sub-color;
-		padding: 2% 0%;
-		padding-right: 8%;
+		.work-container();
+
+		h4{
+			
+		}
+		
 	
 	}
 
 	.work2{
-		.display();
-		background: @main-color;
-		border-top: 1px solid @sub-color;
-		padding: 2% 0%;
+		.work-container();
+
+		h4{
+			
+		}
 	}
 }
 // footer styles
