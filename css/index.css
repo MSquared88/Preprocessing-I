@@ -1,1 +1,342 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  border: 5px solid black;
+  border-radius: 5px;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  margin: 0% 3%;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 4% 0%;
+  padding: 5% 3%;
+  background: black;
+  border: 10px solid cyan;
+  border-radius: 10px;
+}
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 4rem;
+  margin: 1% 0%;
+}
+header h4 {
+  padding: 1% 0%;
+  font-size: 2rem;
+  color: white;
+}
+header .div img {
+  width: 30%;
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: 1px solid gray;
+  margin: 1% 0%;
+}
+.projects a {
+  width: 25%;
+  margin: 3% 0%;
+  padding: 1%;
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background: cyan;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.projects p {
+  font-size: 1.7rem;
+  padding-top: 3%;
+  color: white;
+  font-family: 'Ubuntu Mono', monospace;
+}
+.header-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin: 8% 0%;
+}
+.header-img img {
+  width: 250px;
+  height: 250px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 4% 0%;
+}
+@media screen and (max-width: 480px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: start;
+  width: 49%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+@media screen and (max-width: 480px) {
+  .about div {
+    width: 100%;
+    align-items: center;
+  }
+}
+.about div h2 {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 4% 0%;
+  padding: 2%;
+}
+.about div p {
+  font-size: 2rem;
+  margin-bottom: 10%;
+  font-family: 'Ubuntu Mono', monospace;
+  padding: 2%;
+}
+.about div h4 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 2rem;
+  border: 1px solid gray;
+  padding: 3% 5%;
+  width: 100%;
+}
+.history {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.history h2 {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 2% 0%;
+}
+.history .work-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: 1px solid #f2f2f2;
+  padding: 2% 1%;
+  font-weight: 600;
+}
+.history .work-main h4 {
+  width: 25%;
+}
+.history .work1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: 1px solid #f2f2f2;
+  padding: 2% 1%;
+}
+.history .work1 h4 {
+  width: 25%;
+}
+.history .work2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: 1px solid #f2f2f2;
+  padding: 2% 1%;
+}
+.history .work2 h4 {
+  width: 25%;
+}
+footer {
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  border: 5px solid black;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  margin: 2% 0%;
+  padding: 4% 0%;
+}
+footer p {
+  font-size: 2rem;
+}
